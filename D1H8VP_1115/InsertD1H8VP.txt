@@ -1,0 +1,15 @@
+INSERT INTO Cím (4523, 'Budapest', 'Petofi S. u.', '15');
+INSERT INTO Cím (2456, 'Miskolc', 'Örs u.', '45');
+INSERT INTO Cím (2356, 'Miskolc', 'Nyarfa u.', '8');
+
+INSERT INTO Hallgató ('D2HI23', 45, 'Kis Janos', 'BI1', '15.10.2002', 2);
+INSERT INTO Hallgató ('DRTK78', 38, 'Toth Peter', 'BI2', '23.09.2001', 21);
+INSERT INTO Hallgató ('UV2K8W', 18, 'Nagy Zsolt', 'BI4', '02.04.2002', 20);
+
+INSERT INTO Tárgy (18, 'UV2K8W', 'SZK3', 6, 'Hálózat');
+INSERT INTO Tárgy (38, 'DRTK78', 'SZK3', 5, 'Adatbázis 1.');
+INSERT INTO Tárgy (45, 'D2HI23', 'SZK3', 5, 'OOP alapjai');
+
+INSERT INTO Oktató('SZK3', 45, 'ÁIT', 'Bednarik László');
+INSERT INTO Oktató('SZK3', 38, 'ÁIT', 'Bednarik László');
+INSERT INTO Oktató('SZK3', 18, 'ÁIT', 'Bednarik László');
