@@ -7,11 +7,11 @@ SELECT Nev, Telefonszam FROM Vevo;
 π Nev, Telefonszam Vevo
 
 Kilistázza a Pizza neve alapján a minimum összeget, maximum összeget és az átlagos összeget.
-SELECT min(Teljes_ar), max(Teljes_ar), avg(Teljes_ar) FROM Pizza GROUP BY Pizza_neve;
+SELECT Pizza_neve, min(Teljes_ar), max(Teljes_ar), avg(Teljes_ar) FROM Pizza GROUP BY Pizza_neve;
 Γ Pizza_neve min(Teljes_ar), max(Teljes_ar), avg(Teljes_ar) Pizza
 
 A pizzák adatainak ki listázása, amelyek 3000nél olcsóbbak.
-SELECT * FROM Pizza WHERE Teljes_ar<’3000’;
+SELECT * FROM Pizza WHERE Teljes_ar<3000;
 σ Teljes_ar < '3000' Pizza
 
 Kilistázza azokat a pizzákat, amelyeknek az átlagosnál drágábbak.
@@ -19,21 +19,21 @@ SELECT Pizza_neve FROM Pizza WHERE Teljes_ar>(SELECT avg(Teljes_ar) FROM Pizza);
 π Pizza_neve σ Teljes_ar>avg(Teljes_ar) Pizza
 
 Kilistázza a nevet a Pizzázó és a Futár táblából.
-SELECT Telefonszam from Pizzazo, Futar;
+SELECT A.Telefonszam,B.Telefonszam FROM futar A INNER JOIN pizzazo B ON A.FutarID = B.PizzazoID
 π Telefonszam Pizzazo ⨯ Futar
 
-Kilistázza a vevő kártyájának kártyaszámát és a lejárati dátumát, ha a vevő a 10es házszámban lakik.
-SELECT Kartyaszam, Lejarati_datum FROM Bankkartya INNER JOIN Vevo ON Bankkartya.VevoID=Vevo.VevoID WHERE Hazszam=10;
+Kilistázza a vevő kártyájának kártyaszámát és a lejárati dátumát, ha a vevő a 1es házszámban lakik.
+SELECT Kartyaszam, Lejarati_datum FROM Bankkartya INNER JOIN Vevo ON Bankkartya.VevoID=Vevo.VevoID WHERE Hazszam='1';
 π Kartyaszam, Lejarati_datum  σ Hazszam=10 Bankkartya ⨝ Bankkartya.VevoID = Vevo.VevoID Vevo
 
 Kilistázza azoknak a pizzáknak a nevét, amelynek az ára 1000 és 2000Ft között van.
-SELECT Pizza neve FROM Pizza WHERE Teljes_ar<2000 MINUS SELECT Pizza neve FROM Pizza WHERE Teljes_ar<1000;
+SELECT Pizza_neve FROM pizza WHERE Teljes_ar<'2000' and not exists (SELECT Pizza_neve FROM pizza WHERE Teljes_ar<'1000');
 π Pizza σ Teljes_ar < 2000 Pizza \ π Pizza σ Teljes_ar < 1000 Pizza
 
 Kilistázza bármely 30 centis pizza áránál drágább pizza nevét.
-SELECT Pizza_neve FROM Pizza WHERE Teljes_ar > ANY (SELECT Teljes_ar FROM Pizza WHERE Meret=30);
+SELECT Pizza_neve FROM Pizza WHERE Teljes_ar > ANY (SELECT Meret FROM meret WHERE meret ='30');
 π Pizza_neve σ Teljes_ar>( π Teljes_ar σ Meret=30 Pizza) Pizza
 
-Kilistázza azokat a Pizza Hut nevű pizzázókat, amelyek 8tól 22ig vannak nyitva.
-SELECT PizzazoID FROM Pizzazo WHERE Nyitva_tartas=’8tól 22ig’ AND Nev=’Pizza Hut’;
+Kilistázza azokat a Pizza Hut nevű pizzázókat, amelyek egész nap vannak nyitva.
+SELECT PizzazoID FROM Pizzazo WHERE Nyitvatartas=024 AND Nev='Pizza Hut';
 σ Nyitva_tartas=’8tól 22ig' AND Nev=’Pizza Hut’ Pizzazo

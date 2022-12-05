@@ -1,37 +1,37 @@
-Táblák feltöltése:
+﻿Táblák feltöltése:
 
 BEGIN
 
 INSERT INTO Beszallito VALUES
-(’1’, ’ 701673824’, ’ Városi Piac’, ’ Miskolc’, ’3509’, ’Fő utca’, ’13’ );
+('1', ' 701673824', 'Városi Piac', ' Miskolc', '3509', 'Fő utca', '13' );
 INSERT INTO Beszallito VALUES
- (’2’, ’ 305638633’, ’ Kis Zöldséges’, ’ Budapest’, ’ 1032’, ’ Arany János út’, ’ 5’ );
+ ('2', ' 305638633', ' Kis Zöldséges', ' Budapest', ' 1032', ' Arany János út', ' 5' );
 INSERT INTO Beszallito VALUES
- (’3’, ’ 207462758’, ’ Marika Zöldséges’, ’ Miskolc’, ’3510’, ’Fő utca’, ’23’ );
+ ('3', ' 207462758', ' Marika Zöldséges', ' Miskolc', '3510', 'Fő utca', '23' );
 INSERT INTO Beszallito VALUES
- (’4’, ’ nagy.piac@gmail.com’, ’ Nagy Piac’, ’ Debrecen’, ’ 4024’, ’Fő utca’, ’1’ );
+ ('4', ' nagy.piac@gmail.com', ' Nagy Piac', ' Debrecen', ' 4024', 'Fő utca', '1' );
 INSERT INTO Beszallito VALUES
- (’5’, ’ 704628463’, ’ Erzsike Zöldséges, ’ Miskolc’, ’ 3521’, ’ Jókai Mór út’, ’ 54’ );
+ ('5', ' 704628463', ' Erzsike Zöldséges, ' Miskolc', ' 3521', ' Jókai Mór út', ' 54' );
 INSERT INTO Beszallito VALUES
- (’6’, ’ 307362856’, ’ Nagy Zöldséges’, ’ Nyíregyháza’, ’ 4433’, ’Fő utca’, ’ 65’ );
+ ('6', ' 307362856', ' Nagy Zöldséges', ' Nyíregyháza', ' 4433', 'Fő utca', ' 65' );
 INSERT INTO Beszallito VALUES
- (’7’, ’ 207452748’, ’ Kertvárosi Piac’, ’ Miskolc’, ’3500’, ’Fő utca’, ’73’ );
+ ('7', ' 207452748', ' Kertvárosi Piac', ' Miskolc', '3500', 'Fő utca', '73' );
 INSERT INTO Beszallito VALUES
- (’8’, ’ kis.piac@gmail.com’, ’ Kis Piac’, ’ Kazincbarcika’, ’3700’, ’Fő utca’, ’13’ );
+ ('8', ' kis.piac@gmail.com', ' Kis Piac', ' Kazincbarcika', '3700', 'Fő utca', '13' );
 INSERT INTO Beszallito VALUES
- (’9’, ’ 707462847’, ’ Veteményes Kert’, ’ Miskolc’, ’3500’, ’ Tulipán utca’, ’64’ );
+ ('9', ' 707462847', ' Veteményes Kert', ' Miskolc', '3500', ' Tulipán utca', '64' );
 INSERT INTO Beszallito VALUES
- (’10’, ’ 308462648’, ’ Nagy Húsáruház’, ’ Ózd’, ’ 3662’, ’Fő utca’, ’24’ );
+ ('10', ' 308462648', ' Nagy Húsáruház', ' Ózd', ' 3662', 'Fő utca', '24' );
 INSERT INTO Beszallito VALUES
- (’11 ’, ’ 208463847 ’, ’ Városi Húsbolt ’, ’ Miskolc ’, ’ 3500 ’, ’ Szeder utca ’, ’ 23 ’ );
+ ('11 ', ' 208463847 ', ' Városi Húsbolt ', ' Miskolc ', ' 3500 ', ' Szeder utca ', ' 23 ' );
 INSERT INTO Beszallito VALUES
- (’12 ’, ’ feri.husbolt@gmail.com ’, ’ Feri Húsbolt ’, ’ Szeged ’, ’ 6720 ’, ’ Fő utca’, ’ 64 ’ );
+ ('12 ', ' feri.husbolt@gmail.com ', ' Feri Húsbolt ', ' Szeged ', ' 6720 ', ' Fő utca', ' 64 ' );
 INSERT INTO Beszallito VALUES
- (’13 ’, ’ 708462824 ’, ’ Kis Húsbolt’, ’ Miskolc ’, ’ 3517 ’, ’ Mogyoró utca’, ’ 89 ’ );
+ ('13 ', ' 708462824 ', ' Kis Húsbolt', ' Miskolc ', ' 3517 ', ' Mogyoró utca', ' 89 ' );
 INSERT INTO Beszallito VALUES
- (’14 ’, ’ 207568273 ’, ’ Pistike Gyümölcsboltja’, ’ Budapest ’, ’ 1036 ’, ’ Fő utca’, ’ 102 ’ );
+ ('14 ', ' 207568273 ', ' Pistike Gyümölcsboltja', ' Budapest ', ' 1036 ', ' Fő utca', ' 102 ' );
 INSERT INTO Beszallito VALUES
- (’15 ’, ’ 307629857 ’, ’ Margit Kenyérbolt’, ’ Miskolc ’, ’ 3500 ’, ’ Bodza utca’, ’ 43 ’ );
+ ('15 ', ' 307629857 ', ' Margit Kenyérbolt', ' Miskolc ', ' 3500 ', ' Bodza utca', ' 43 ' );
 
 END
 
@@ -172,38 +172,36 @@ INSERT INTO Pizzazo VALUES
 ('15', 'Pizza Hut', '202222222', 'pizza.hut.hu');
 END
 
-BEGIN
 INSERT INTO Bankkartya VALUES
-('7629746285628560', 'OTP', '2025-10-28', 'betéti kártya', '9');
+('85628560', 'OTP', '2025-10-28', 'betéti kártya', '9');
 INSERT INTO Bankkartya VALUES
-('0543345344523453', 'MKB', '2025-10-29', 'hitelkártya', '12');
+('44523453', 'MKB', '2025-10-29', 'hitelkártya', '12');
 INSERT INTO Bankkartya VALUES
-('5432467234523460', 'CIB Bank', '2025-10-30', 'többfunkciós kártya', '7');
+('34523460', 'CIB Bank', '2025-10-30', 'többfunkciós kártya', '7');
 INSERT INTO Bankkartya VALUES
-('0008362948562857', 'Raiffeisen', '2025-10-31', 'betéti kártya', '8');
+('48562857', 'Raiffeisen', '2025-10-31', 'betéti kártya', '8');
 INSERT INTO Bankkartya VALUES
-('0076297466052345', 'Budapest Bank', '2025-11-01', 'hitelkártya', '7');
+('66052345', 'Budapest Bank', '2025-11-01', 'hitelkártya', '7');
 INSERT INTO Bankkartya VALUES
-('0072463263463463', 'OTP', '2025-11-02', 'többfunkciós kártya', '3');
+('63463463', 'OTP', '2025-11-02', 'többfunkciós kártya', '3');
 INSERT INTO Bankkartya VALUES
-('0036234632463432', 'OTP', '2025-11-03', 'betéti kártya', '2');
+('32463432', 'OTP', '2025-11-03', 'betéti kártya', '2');
 INSERT INTO Bankkartya VALUES
-('0346346234632463', 'MKB', '2025-11-04', 'hitelkártya', '5');
+('34632463', 'MKB', '2025-11-04', 'hitelkártya', '5');
 INSERT INTO Bankkartya VALUES
-('0346234632463246', 'CIB Bank', '2025-11-05', 'többfunkciós kártya', '1');
+('32463246', 'CIB Bank', '2025-11-05', 'többfunkciós kártya', '1');
 INSERT INTO Bankkartya VALUES
-('0034634623463246', 'Raiffeisen', '2025-11-06', 'betéti kártya', '3');
+('23463246', 'Raiffeisen', '2025-11-06', 'betéti kártya', '3');
 INSERT INTO Bankkartya VALUES
-('0004375261464743', 'Budapest Bank', '2025-11-07', 'hitelkártya', '9');
+('61464743', 'Budapest Bank', '2025-11-07', 'hitelkártya', '9');
 INSERT INTO Bankkartya VALUES
-('0123485487436352', 'OTP', '2025-11-08', 'többfunkciós kártya', '10');
+('87436352', 'OTP', '2025-11-08', 'többfunkciós kártya', '10');
 INSERT INTO Bankkartya VALUES
-('0000346537483461', 'OTP', '2025-11-09', 'betéti kártya', '14');
+('57483461', 'OTP', '2025-11-09', 'betéti kártya', '14');
 INSERT INTO Bankkartya VALUES
-('0457235615146346', 'MKB', '2025-11-10', 'hitelkártya', '1');
+('15146346', 'MKB', '2025-11-10', 'hitelkártya', '1');
 INSERT INTO Bankkartya VALUES
-('0056237438347311', 'CIB Bank', '2025-11-11', 'többfunkciós kártya', '15');
-END
+('38347311', 'CIB Bank', '2025-11-11', 'többfunkciós kártya', '15');
 
 BEGIN
 INSERT INTO Feltet VALUES
@@ -304,38 +302,34 @@ INSERT INTO Rendeles VALUES
 ('15', '2', '4');
 END
 
-BEGIN
-INSERT INTO Beszallitas VALUES
+
+INSERT INTO beszallito VALUES
 ('1', '2018-10-30', 'Liszt', '6', '4');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('2', '2018-10-31', 'Tej', '3', '5');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('3', '2018-11-01', 'Cukor', '4', '3');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('4', '2018-11-02', 'Hús', '8', '5');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('5', '2018-11-03', 'Zöldségek', '9', '2');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('6', '2018-11-04', 'Hústermékek', '2', '2');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('7', '2018-11-05', 'Burgonya', '3', '4');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('8', '2018-11-06', 'Sonka', '4', '7');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('9', '2018-11-07', 'Gyümölcsök', '5', '9');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('10', '2018-11-08', 'Csirkehús', '6', '4');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('11', '2018-11-09', 'Tej', '7', '2');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('12', '2018-11-10', 'Liszt', '6', '6');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('13', '2018-11-11', 'Só', '12', '5');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('14', '2018-11-12', 'Padlizsán', '14', '4');
-INSERT INTO Beszallitas VALUES
+INSERT INTO beszallito VALUES
 ('15', '2018-11-13', 'Kukorica', '14', '15');
-END
-
-
-

@@ -4,7 +4,7 @@ CREATE TABLE Pizzazo (
 PizzazoID INT NOT NULL,
 Nyitvatartas VARCHAR(20),
 Nev VARCHAR(30),
-Telefonszam NUMBER,
+Telefonszam INT,
 Weboldal VARCHAR(40),
 PRIMARY KEY (PizzazoID)
 );
@@ -14,9 +14,9 @@ BeszallitoID INT NOT NULL,
 Elerhetoseg VARCHAR(50),
 Nev VARCHAR(30),
 Varos VARCHAR(30),
-Iranyitoszam NUMBER,
+Iranyitoszam INT,
 Utca VARCHAR(30),
-Hazszam NUMBER,
+Hazszam INT,
 PRIMARY KEY (BeszallitoID)
 );
 
@@ -43,9 +43,9 @@ VevoID INT NOT NULL,
 Nev VARCHAR(30),
 Telefonszam INT,
 Varos VARCHAR(30),
-Iranyitoszam NUMBER,
+Iranyitoszam INT,
 Utca VARCHAR(30),
-Hazszam NUMBER,
+Hazszam INT,
 PRIMARY KEY (VevoID)
 );
 
